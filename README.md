@@ -2,11 +2,12 @@
 
 XPath uses path expressions to select nodes or node-sets in an XML document.
 
-The example demonstrates the use of XPath on a sample XML document. The solutions can be tested using https://www.freeformatter.com/xpath-tester.html 
+The example demonstrates the use of XPath on a sample XML document. The solutions can be tested using https://www.freeformatter.com/xpath-tester.html
 
 * Select titles of all books.
 ```
 /bookstore/book/title
+//title
 ```
 
 * Select categories of books.
@@ -17,6 +18,7 @@ The example demonstrates the use of XPath on a sample XML document. The solution
 * Select all the prices.
 ```
 /bookstore/book/price[text()]
+/bookstore/book/price
 ```
 
 * Select price nodes with price>35.
