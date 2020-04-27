@@ -36,7 +36,7 @@ The example demonstrates the use of XPath on a sample XML document. The solution
 /bookstore/book[@category="web"]
 ```
 
-* Select books that are in German (de).
+* Select books that are in German - books with the "lang" attribute equals to "de" in the title.
 ```
 /bookstore/book[title/@lang="de"]
 ```
