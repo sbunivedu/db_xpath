@@ -31,9 +31,8 @@ Attribute='category=web'
 Attribute='category=web'
 ```
 
-* Select all the prices.
+* Select all prices __elements__.
 ```
-/bookstore/book/price[text()]
 /bookstore/book/price
 ```
 
@@ -47,7 +46,22 @@ Element='<price>49.99</price>'
 Element='<price>39.95</price>'
 ```
 
-* Select price nodes with price>35.
+* Select all price __values__.
+```
+/bookstore/book/price/text()
+```
+
+Expected output:
+```xml
+Text='20.00'
+Text='30.00'
+Text='29.99'
+Text='30.99'
+Text='49.99'
+Text='39.95'
+```
+
+* Select price nodes with `price>35`.
 ```
 /bookstore/book[price>35]/price
 ```
@@ -60,7 +74,7 @@ Element='<price>49.99</price>'
 Element='<price>39.95</price>'
 ```
 
-* Select title nodes with price>35.
+* Select title nodes with `price>35`.
 ```
 /bookstore/book[price>35]/title
 ```

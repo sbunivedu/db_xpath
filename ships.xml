@@ -3,7 +3,7 @@
 <!-- use https://www.freeformatter.com/xpath-tester.html to test XPath expressions -->
 <Ships>
 <Class name = "Kongo" type = "bc" country = "Japan"
-numGuns = "8" bore = "14" displacement = "32000">
+  numGuns = "8" bore = "14" displacement = "32000">
   <Ship name = "Kongo" launched = "1913" />
   <Ship name = "Hiei" launched = "1914" />
   <Ship name = "Kirishima" launched = "1915">
