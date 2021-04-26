@@ -61,15 +61,24 @@ Text='49.99'
 Text='39.95'
 ```
 
-* Select price nodes with `price>35`.
+* Select price nodes of books with a `price>35`.
 ```
 /bookstore/book[price>35]/price
 ```
 
 Expected output:
 ```xml
-
 Element='<price discount="promo">30.99</price>'
+Element='<price>49.99</price>'
+Element='<price>39.95</price>'
+```
+
+* Select price nodes with `price>35`.
+```
+/bookstore/book/price[.>35]
+```
+Expected output:
+```xml
 Element='<price>49.99</price>'
 Element='<price>39.95</price>'
 ```
